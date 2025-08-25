@@ -4,10 +4,12 @@ import com.rafaelwaguiar.base_api_hexagonal.api.exception.TodoListNotFoundExcept
 import com.rafaelwaguiar.base_api_hexagonal.domain.model.TodoList;
 import com.rafaelwaguiar.base_api_hexagonal.domain.port.in.TodoListUseCase;
 import com.rafaelwaguiar.base_api_hexagonal.domain.port.out.TodoListRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
+@Service
 public class TodoListService implements TodoListUseCase {
 
     private final TodoListRepository repository;
